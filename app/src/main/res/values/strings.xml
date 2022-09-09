@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Test</string>
+    <string name="text_main">Главная</string>
+    <string name="text_ticket">Билеты</string>
+    <string name="text_theory">Теория</string>
+    <string name="text_mistake">Ошибки</string>
 </resources>
