@@ -6,13 +6,124 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fffd45"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
+
+    <TextView
+        android:id="@+id/Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:typeface="serif"
+        android:text="@string/text_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Ticket"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_ticket"
+        android:typeface="serif"
+        app:layout_constraintStart_toEndOf="@id/Main"
+        app:layout_constraintEnd_toStartOf="@id/Theory"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Theory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_theory"
+        android:typeface="serif"
+        app:layout_constraintStart_toEndOf="@id/Ticket"
+        app:layout_constraintEnd_toStartOf="@id/Mistake"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Mistake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_mistake"
+        android:typeface="serif"
+        app:layout_constraintStart_toEndOf="@id/Theory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/img_home"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/main_page"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_ticket"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="5dp"
+         />
+
+    <ImageButton
+        android:id="@+id/img_ticket"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/ticket"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_theory"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/img_home"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <ImageButton
+        android:id="@+id/img_theory"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:src="@drawable/theory"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_mistake"
+        app:layout_constraintStart_toEndOf="@+id/img_ticket"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginBottom="28dp"
+        />
+
+    <ImageButton
+        android:id="@+id/img_mistake"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mistake"
+        app:layout_constraintStart_toEndOf="@id/img_theory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+       />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

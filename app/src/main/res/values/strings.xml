@@ -2,4 +2,8 @@
     <string name="app_name">Test</string>
 
     <string name="item_selected_message">You have selected the item: %1$s</string>
+    <string name="text_main">Главная</string>
+    <string name="text_ticket">Билеты</string>
+    <string name="text_theory">Теория</string>
+    <string name="text_mistake">Ошибки</string>
 </resources>
